@@ -65,12 +65,12 @@ spawn(function()
 		pcall(function()
 			if _G.FastAttack then
 				repeat
-					wait(_G.Fast_Delay)
+					wait(_G.FastAttack_Delay)
 					AttackNoCD()
 				until not _G.FastAttack
 			end
 		end)
 	end
 end)
-_G.Fast_Delay = "0"
+_G.FastAttack_Delay = 0
 _G.FastAttack = true
